@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "e2e-tutorial"
+    }
+  },
+  "defaultProject": "e2e-tutorial",
+  "cli": {
+    "analytics": "621930f9-ff86-45a7-9ca1-5041a1cecf98"
+  }
 }
