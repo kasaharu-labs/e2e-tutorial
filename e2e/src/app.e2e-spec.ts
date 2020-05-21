@@ -1,5 +1,5 @@
-import { AppPage } from './app.po';
 import { browser, logging } from 'protractor';
+import { AppPage } from './app.po';
 
 describe('workspace-project App', () => {
   let page: AppPage;
@@ -8,9 +8,9 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display header text', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('e2e-tutorial app is running!');
+    expect(page.getHeaderText()).toEqual('My Store');
   });
 
   afterEach(async () => {
