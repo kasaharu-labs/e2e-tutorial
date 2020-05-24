@@ -25,6 +25,11 @@ export class ProductDetailsPage {
     return element(by.partialButtonText('Buy')).click() as Promise<void>;
   }
 
+  acceptAlertDialog(): Promise<void> {
+    const alertDialog = browser.switchTo().alert();
+    return alertDialog.accept() as Promise<void>;
+  }
+
   getAlertDialogText(): Promise<string> {
     const alertDialog = browser.switchTo().alert();
     alertDialog.accept();
